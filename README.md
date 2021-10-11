@@ -6,8 +6,8 @@ Run `./gradlew clean build` to get the error
 
 # Steps to replicate
 
-1. Create an inline function with using an `when` clause
-2. Create a unit test that call that function
+1. Create an inline function using a `when` clause
+2. Create a unit test that calls that function
 3. Run `./gradlew clean build`
 4. Get a similar error to this:
 
@@ -42,4 +42,4 @@ at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClas
 ... 18 more
 ```
 
-The test runs successfully with the IntelliJ runner, even when using the gradlew behind the hood.
+The test runs successfully with the IntelliJ runner, even when using the gradlew behind the hood. This only happens when using the gradlew script directly 
